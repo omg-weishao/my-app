@@ -31,8 +31,10 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            headerLink : "HeaderLink"
+            headerLink : "HeaderLink",
+            homeMounted: true
         };
+        console.log("constructor")
     }
 
     //子组件 header 向父组件 app传递 参数
@@ -51,11 +53,28 @@ export default class App extends Component {
         })
     }
 
+    onChangeHomeMounted(){
+        this.setState({
+          homeMounted: !this.state.homeMounted
+        })
+    }
+
   render(){
     const user={
       name:"xuebing",
       hobbies:["sports","readings"]
     };
+    let homeComp="";
+    if(this.state.homeMounted){
+        homeComp = (<Header
+            name={"weishao"}
+            age ={20} user={user}
+            greet = {this.onGreet}
+            // 方法里面使用了this 调用的时候需要bind(this）
+            link={this.onChangeHeaderLink.bind(this)}
+            initName={this.state.headerLink}
+        />);
+    }
     return (
         <div className="container">
           <div className="row">
@@ -71,18 +90,21 @@ export default class App extends Component {
             <div className="col-xs-1 col-xs-offset-11">
                 {/*//父组件app 向子组件传递值  如下：  用参数 = {}的形式传递*/}
                 {/*//子组件通过 props.参数 获得穿过来的值*/}
-              <Header
-                  name={"weishao"}
-                  age ={20} user={user}
-                  greet = {this.onGreet}
-                  // 方法里面使用了this 调用的时候需要bind(this）
-                  link={this.onChangeHeaderLink.bind(this)}/>
+
+                {homeComp}
+            </div>
+
+              {/*<div>*/}
+              {/*    {this.props.children}*/}
+              {/*</div>*/}
+          </div>
+            <br/>
+            <div className="row">
+                <div className="col-xs-1 col-xs-offset-11">
+                    <button onClick={this.onChangeHomeMounted.bind(this)}>(U)mount Comp</button>
+                </div>
 
             </div>
-              <div>
-                  {this.props.children}
-              </div>
-          </div>
         </div>
     );
   }

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28bad304-827b-46ed-8051-9ba69a96d5a4" name="Default Changelist" comment="" />
+    <list default="true" id="28bad304-827b-46ed-8051-9ba69a96d5a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +18,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -32,6 +40,7 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1bAfl7qsBuxzXSQvkzZB8cFA2zq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,12 +48,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -66,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1588079966924</updated>
       <workItem from="1588079968330" duration="1962000" />
-      <workItem from="1588213249737" duration="13411000" />
+      <workItem from="1588213249737" duration="16234000" />
+      <workItem from="1588493053199" duration="1553000" />
     </task>
     <servers />
   </component>
@@ -74,10 +88,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="451" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1588213252845">
+    <state x="722" y="142" key="#ESLint" timestamp="1588493652383">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="451" y="285" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588213252845" />
+    <state x="722" y="142" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1588493652383" />
+    <state x="451" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1588493103398">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="451" y="285" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588493103398" />
     <state x="1010" y="434" key="run.anything.popup" timestamp="1588213977795">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

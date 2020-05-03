@@ -23,7 +23,7 @@ export default class Header extends Component{
 		this.state = {
 			age : props.age,
 			status:0,
-			headerLink : "Change HeaderLink"
+			headerLink : props.initName
 		};
 		setTimeout(() => {
 			this.setState({
@@ -40,7 +40,7 @@ export default class Header extends Component{
 		// this.age +=3;
 		this.setState({
 			age : this.state.age + 3
-		})
+		});
 		 console.log(this);
 	}
 	handGreet(){
@@ -51,6 +51,36 @@ export default class Header extends Component{
 	handChangeLink(){
 		this.props.link(this.state.headerLink);
 	}
+	handInput(event){
+		this.setState({
+			headerLink : event.target.value
+		})
+	}
+	componentWillMount() {
+		console.log("componentWillMount");
+	}
+	componentDidMount() {
+		console.log("componentDidMount");
+	}
+
+	componentWillReceiveProps(nextProps, nextContext) {
+		console.log("componentWillReceiveProps");
+	}
+	shouldComponentUpdate(nextProps, nextState, nextContext) {
+		console.log("shouldComponentUpdate");
+		return true;
+	}
+
+	componentWillUpdate(nextProps, nextState, nextContext) {
+		console.log("componentWillUpdate");
+	}
+	componentDidUpdate(prevProps, prevState, snapshot) {
+		console.log("componentDidUpdate");
+	}
+	componentWillUnmount() {
+		console.log("componentWillUnmount");
+	}
+
 	render(){
 		// console.log(this.props);
 		return (
@@ -63,6 +93,10 @@ export default class Header extends Component{
 					<br/>
 					<button onClick={this.handGreet.bind(this)} className="btn btn-primary">Greet</button>
 					<br/>
+					<input type="text"
+						   defaultValue={this.props.initName}
+						   value={this.state.initName}
+						   onChange={(event) => this.handInput(event)}/>
 					<button onClick={this.handChangeLink.bind(this)} className="btn btn-primary">ChangeLink</button>
 					<h4>hobbies:</h4>
 					<ul>
